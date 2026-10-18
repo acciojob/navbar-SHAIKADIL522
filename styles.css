@@ -16,12 +16,20 @@ nav ul {
 
 nav li {
   font-size: 18px;
-  padding: 1em 1.5em; /* 18px vertical, 27px horizontal */
+  padding: 1em 1.5em;
   cursor: pointer;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 
-nav li:not(:last-child) {
-  border-right: 2px solid white;
+/* Pricing: no right border */
+nav ul:first-child li:last-child {
+  border-right: none;
+}
+
+/* Team: no left border */
+nav ul:last-child li:first-child {
+  border-left: none;
 }
 
 nav li:hover {
